@@ -6,7 +6,7 @@ const Wrapper = styled.div``
 import { InputProps } from './Input.types'
 
 const TestComponent: React.FC<InputProps> = ({ theme }) => (
-  <Wrapper>
+  <Wrapper data-testid="wrapper">
     hello
   </Wrapper>
 );
