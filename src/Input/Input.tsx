@@ -1,12 +1,16 @@
 import React from "react";
 import styled from "styled-components";
+import { InputProps } from './Input.types'
+import "../styles.scss"
 
 const Wrapper = styled.div``
 
-import { InputProps } from './Input.types'
-
 const TestComponent: React.FC<InputProps> = ({ theme }) => (
-  <Wrapper data-testid="wrapper">
+  <Wrapper
+    className={`SuggestInput_wrapper_${theme}`}
+    data-testid="wrapper"
+    contentEditable
+  >
     hello
   </Wrapper>
 );
